@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Why Data Definition is Hard ? | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Why Data Definition is Hard ?" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://aamirai.github.io/square/2021/07/02/Why-Data-Definition-is-So-much-important.html" />
+<meta property="og:url" content="https://aamirai.github.io/square/2021/07/02/Why-Data-Definition-is-So-much-important.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-07-02T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2021-07-02T00:00:00-05:00","url":"https://aamirai.github.io/square/2021/07/02/Why-Data-Definition-is-So-much-important.html","@type":"BlogPosting","headline":"Why Data Definition is Hard ?","dateModified":"2021-07-02T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://aamirai.github.io/square/2021/07/02/Why-Data-Definition-is-So-much-important.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/square/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://aamirai.github.io/square/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/square/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/square/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/square/about/">About Me</a><a class="page-link" href="/square/search/">Search</a><a class="page-link" href="/square/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Why Data Definition is Hard ?</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-07-02T00:00:00-05:00" itemprop="datePublished">
+        Jul 2, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      7 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/aamirai/square/tree/master/_notebooks/2021-07-02-Why-Data-Definition-is-So-much-important.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/square/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/aamirai/square/master?filepath=_notebooks%2F2021-07-02-Why-Data-Definition-is-So-much-important.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/square/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/aamirai/square/blob/master/_notebooks/2021-07-02-Why-Data-Definition-is-So-much-important.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/square/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-07-02-Why-Data-Definition-is-So-much-important.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here is the scenario. You picked up a Data Science project you researched thoroughly and even better you decided to work in a team. You go went through the data science pipeline as it is supposed to be. Instead of taking academic data you decide to do your own data collection.
+But here is a caveat; <br /></p>
+<p>Welcome, I am in my last week of 1st module of Machine Learning in production. And the genius Andrew Ng mesmerizes me with the ‘question why data definition is hard’ and how it could affect model performance. Given the task of labelling the data the task doesn’t sound much of a deal than tedious and cumbersome, here you simply you instruct people about labelling.
+In fact it’s the not the way we think. In his opening lecture he describes a lot wrong can happen with labelling inconsistency, before he jumps to main the part he properly discusses to we must define an input “ X” for example. You have images of mobile phones from industry where the problem is to rule out the phones with scratches on it. But during the labelling you found out that some of the image taken is very hard for even human to find out at first sight.</p>
+<blockquote><p>If you are thinking you to label in spite of that then YOU ARE WRONG.</p>
+</blockquote>
+<p>The correct thing to do is go back to the factory and tell them to improve the lightening condition.</p>
+<blockquote><p>Sometimes if your sensor or your imaging solution or your audio recording solution is not good enough, the best thing you could do is recognize that if even a person can't look at the input and tell us what's going on, then improving the quality of your sensor or improving the quality of the input x, that can be an important first step to ensuring your learning algorithm can have reasonable performance.</p>
+</blockquote>
+<p>Even he concluded further that not only you focus on input 'x' you also have to figure out what should be the target label y ? WHY 'Y' ? Keep reading to know more about label inconsistency.
+<img src="/square/images/copied_from_nb/vqa/2.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Major-types-of-data-problems">Major types of data problems<a class="anchor-link" href="#Major-types-of-data-problems"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/square/images/copied_from_nb/vqa/3.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Humans are good at labelling data, in fact unstructured data but there is certain limitations to it one thing is exponential growth of data and the other thing is label inconsistency. That seems plausible here is why, given a problem statement it requires millions of data to work but the data doesn't comes in its purest form its unstructured and it require human intervention to label. And it's better to have 10,000 clean labels than 1,00,00,00 inconsistent labels. And it takes huge amount of time and human power to label it that’s why we have things like data augmentation. So one thing you can do to solve this problem is emphasis in data process, in terms of how you collect and install the data. Then you can just give proper instructions to crowd source labellers.</p>
+<h3 id="Label-inconsistency">Label inconsistency<a class="anchor-link" href="#Label-inconsistency"> </a></h3><p>Even though, you used proper conventions to label your data. There might still be a problem all I am saying is <strong>this doesn't apply to every problem</strong> suppose if you have image labelling task and the data is huge and you setup a team to label it one might label scratches in mobile differently and other included multiple scratches in one bounding box, there label inconsistency happens.  And if you have a 100 labelers or even more, it's just harder to get 100 people into a room to all talk to each other and hash out the process. And so you might have to rely on a smaller team to establish a consistent label definition and then share that definition with all, say 100 or more labellers and ask them to all implement the same process.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><figure>
+  
+    <img class="docimage" src="/square/images/copied_from_nb/vqa/lable_inonsistency.png" alt="Drawing" />
+    
+    
+</figure>
+
+<br /></p>
+<blockquote><p>There is more to just labelling the data. It requires proper thought and decision making process to narrow it down to a proper solution.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><figure>
+  
+    <img class="docimage" src="/square/images/copied_from_nb/vqa/lable_inonsistency1.png" alt="Drawing" />
+    
+    
+</figure>
+</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="How-you-Improve-Label-consitency">How you Improve Label consitency<a class="anchor-link" href="#How-you-Improve-Label-consitency"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here's a general process you can use. When you find that there's disagreements, have the people responsible for labelling, this could be the machine label engineer, or it could be the subject matter expert, such as the manufacturing expert that is responsible for labelling what is a scratch and what isn't a scratch, and/or the dedicated labellers, discuss together what they think should be a more consistent definition of a label y, and try to have them reach an agreement. During this discussion, in some cases the labellers will come back and say they don't think the input x has enough information. Another common decision that people an engineer could use is merging classes. For ex: In phone scratches you label deep scratches on the surface of the phone, as well as shallow scratches on the surface of the phone, but if the definition between what constitutes a deep scratch versus a shallow scratch, barely visible here I know, is unclear, then you end up with labellers very inconsistently labelling things as deep versus shallow scratches. Sometimes you don't really need to distinguish between these two classes, and you can instead merge the two classes into a single class, say, the scratch class, and this gets rid of all of the inconsistencies with different labellers labelling the same thing, deep versus shallow. Merging classes isn't always applicable, but when it is, it simplifies the task for the learning algorithm. Let me use speech illustration to illustrate this further. Given the audio clip, You really can't tell what they said. If you were to force everyone to transcribe it, some labellers would transcribe, "Nearly go." Some maybe they'll say, "Nearest grocery," and it's very difficult to get to consistency because the audio clip is genuinely ambiguous. To improve labelling consistency, it may be better to create a new tag, the <strong>unintelligible</strong> tag, and just ask everyone to label this as nearest unintelligible. This can result in more consistent labels than if we were to ask everyone to guess what they heard when it really is unintelligible. You can observe this example in your YouTube auto captioning where sometimes model is not able to predict the word and it throws gibberish, well know you know it’s a label.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Human-Level-Performance">Human Level Performance<a class="anchor-link" href="#Human-Level-Performance"> </a></h1><h3 id="Given-the-image-below,-what-one-should-describe-the-Human-Level-Performance-on-different-level-of-competence.">Given the image below, what one should describe the <strong>Human Level Performance</strong> on different level of competence.<a class="anchor-link" href="#Given-the-image-below,-what-one-should-describe-the-Human-Level-Performance-on-different-level-of-competence."> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/square/images/copied_from_nb/vqa/4.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Well is depends on the purpose of your problem. If your goal is for proxy for bayes error</p>
+<blockquote><p>Bayes error rate is the lowest possible error rate for any classifier of a random outcome (into, for example, one of two categories) and is analogous to the irreducible error.</p>
+</blockquote>
+<p>Then you can go with the proxy for bayes error that will <strong>0.5 %</strong></p>
+<p>But when you definition human level performances changes to some level of context like you only want to surpass the single radiologist then you can go with <strong>1 % error</strong>.
+But sometimes your HLP or due to lack of industrial skill the human level performance bar is set very low, and in that terms there is no point of having 99% accuracy. But one must ask question "Even these labels are done by humans" this could hurt HLP and can also put a false benchmark. For example:In speech recognition task 70 % of people have annotated data differently and 30 % of data have labelled the same type of data differently the fact is both of the data is fine and the difference is not that much, but here agreeing one type of labelling is so much that it hurts the goal of problem statement. By having label inconsistency it masks or hide the fact that you're learning algorithm is actually creating worse transcripts than humans actually are. And what this means is that a machine learning system can look like it's doing better than HLP. But actually it producing worse transcripts than people because it's just doing better on one type of problem which is not important to do better on while potentially actually doing worse on some other types of input audio.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/square/images/copied_from_nb/vqa/hlp1.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To wrap it up we must focus on cleand data and labelling. Unstructured data is prone to lable inconsistency. Having a small team and agreeing on one label description is always a plus sign.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/square/2021/07/02/Why-Data-Definition-is-So-much-important.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/square/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/square/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/square/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/square/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/square/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
